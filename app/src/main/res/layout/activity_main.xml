@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#858585"
+    android:padding="16dp"
+    android:id="@+id/main">
+
+<!--    หน้าจอแสดงผล-->
+    <TextView
+        android:id="@+id/txtDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:gravity="end"
+        android:background="#2A3037"
+        android:layout_marginBottom="12dp"
+        android:textSize="36dp"/>
+
+<!--        โซนปุ่ม-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="8dp"
+        tools:ignore="ChildInNonViewGroup">
+
+
+        <!--แถวที่1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+<!--            แต่ล่ะปุ่ม-->
+            <Button
+                android:id="@+id/btnAC"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="AC"
+                android:layout_margin="4dp"
+                android:backgroundTint="#ba68c8"/>
+            <Button
+                android:id="@+id/btnDel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="DEL"
+                android:layout_margin="4dp"
+                android:backgroundTint="#ba68c8"/>
+            <Button
+                android:id="@+id/btnMod"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="%"
+                android:layout_margin="4dp"
+                android:backgroundTint="#ba68c8"/>
+            <Button
+                android:id="@+id/btnDiv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="÷"
+                android:layout_margin="4dp"
+                android:backgroundTint="#ba68c8"/>
+
+        </LinearLayout>
+
+<!--        แถวที่2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!--            แต่ล่ะปุ่ม-->
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="7"
+                android:layout_margin="4dp"
+                android:backgroundTint="#9c27b0"/>
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="8"
+                android:layout_margin="4dp"
+                android:backgroundTint="#9c27b0"/>
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="9"
+                android:layout_margin="4dp"
+                android:backgroundTint="#9c27b0"/>
+            <Button
+                android:id="@+id/btnk"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="×"
+                android:layout_margin="4dp"
+                android:backgroundTint="#9c27b0"/>
+
+        </LinearLayout>
+
+<!--        แถวที่3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!--            แต่ล่ะปุ่ม-->
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="4"
+                android:layout_margin="4dp"
+                android:backgroundTint="#7b1fa2"/>
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="5"
+                android:layout_margin="4dp"
+                android:backgroundTint="#7b1fa2"/>
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="6"
+                android:layout_margin="4dp"
+                android:backgroundTint="#7b1fa2"/>
+            <Button
+                android:id="@+id/btnl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="-"
+                android:layout_margin="4dp"
+                android:backgroundTint="#7b1fa2"/>
+
+        </LinearLayout>
+
+<!--        แถวที่4-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!--            แต่ล่ะปุ่ม-->
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1"
+                android:layout_margin="4dp"
+                android:backgroundTint="#4a148c"/>
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="2"
+                android:layout_margin="4dp"
+                android:backgroundTint="#4a148c"/>
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="3"
+                android:layout_margin="4dp"
+                android:backgroundTint="#4a148c"/>
+            <Button
+                android:id="@+id/btnb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+"
+                android:layout_margin="4dp"
+                android:backgroundTint="#4a148c"/>
+
+
+        </LinearLayout>
+
+<!--        แถวที่5-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!--            แต่ล่ะปุ่ม-->
+            <Button
+                android:id="@+id/btnbl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="±"
+                android:layout_margin="4dp"
+                android:backgroundTint="#311b92"/>
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0"
+                android:layout_margin="4dp"
+                android:backgroundTint="#311b92"/>
+            <Button
+                android:id="@+id/btnj"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="."
+                android:layout_margin="4dp"
+                android:backgroundTint="#311b92"/>
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="="
+                android:layout_margin="4dp"
+                android:backgroundTint="#311b92"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
